@@ -1,0 +1,740 @@
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+<script src="//uniqueturker.myleott.com/lib.js" type="text/javascript"></script><script type="text/javascript">
+(function(){
+    var ut_id = "3360ff9700ffb99abe8c5c84d1857deb";
+    if (UTWorkerLimitReached(ut_id)) {
+        document.getElementById('mturk_form').style.display = 'none';
+        document.getElementsByTagName('body')[0].innerHTML = "You have already completed the maximum number of HITs allowed by this requester. Please click 'Return HIT' to avoid any impact on your approval rating.";
+    }
+})();
+</script>
+
+<p>&nbsp;</p>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<meta content="noindex, nofollow" name="robots" />
+<meta content="noindex, nofollow" name="googlebot" />
+<meta content="width=device-width, initial-scale=1" name="viewport" /><script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+<link href="/css/result-light.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+<title></title>
+<script type='text/javascript'>//<![CDATA[
+  $(window).load(function(){
+    $('#before_image').click(function ()
+    {
+       $('#before_image').ready(function(event)
+       {
+           $('#before_image').hide();
+           $('#after_image').show();
+       });
+
+
+
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+
+    });
+
+    $('#before_image2').click(function ()
+    {
+       $('#before_image2').ready(function(event)
+       {
+           $('#before_image2').hide();
+           $('#after_image2').show();
+       });
+
+
+
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+
+    });
+
+      $('#before_image3').click(function ()
+    {
+       $('#before_image3').ready(function(event)
+       {
+           $('#before_image3').hide();
+           $('#after_image3').show();
+       });
+
+
+
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+
+    });
+
+      $('#before_image4').click(function ()
+    {
+       $('#before_image4').ready(function(event)
+       {
+           $('#before_image4').hide();
+           $('#after_image4').show();
+       });
+
+
+
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+
+    });
+
+      $('#before_imagequal').click(function ()
+    {
+       $('#before_imagequal').ready(function(event)
+       {
+           $('#before_imagequal').hide();
+           $('#after_imagequal').show();
+       });
+
+
+
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+
+    });
+
+  $('#before_image').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart = new Date().getTime();
+      var timer = setInterval(function() {
+          var now = new Date().getTime();
+          var remaining = Math.max(0, 1000 - (now - timeStart));
+          $("#cntr").html((remaining / 1000).toFixed(1));
+         if (remaining <= 0) {
+              clearInterval(timer);
+          }
+      }, 100);
+
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+
+      $("#after_image").delay(1000).fadeOut("slow");
+  });
+
+  $('#before_image2').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart2 = new Date().getTime();
+      var timer2 = setInterval(function() {
+          var now2 = new Date().getTime();
+          var remaining2 = Math.max(0, 1000 - (now2 - timeStart2));
+          $("#cntr2").html((remaining2 / 1000).toFixed(1));
+         if (remaining2 <= 0) {
+              clearInterval(timer2);
+          }
+      }, 100);
+
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+
+      $("#after_image2").delay(1000).fadeOut("slow");
+  });
+
+  $('#before_image3').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart3 = new Date().getTime();
+      var timer3 = setInterval(function() {
+          var now3 = new Date().getTime();
+          var remaining3 = Math.max(0, 1000 - (now3 - timeStart3));
+          $("#cntr3").html((remaining3 / 1000).toFixed(1));
+         if (remaining3 <= 0) {
+              clearInterval(timer3);
+          }
+      }, 100);
+
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+
+      $("#after_image3").delay(1000).fadeOut("slow");
+  });
+
+  $('#before_image4').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart4 = new Date().getTime();
+      var timer4 = setInterval(function() {
+          var now4 = new Date().getTime();
+          var remaining4 = Math.max(0, 1000 - (now4 - timeStart4));
+          $("#cntr4").html((remaining4 / 1000).toFixed(1));
+         if (remaining4 <= 0) {
+              clearInterval(timer4);
+          }
+      }, 100);
+
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+
+      $("#after_image4").delay(1000).fadeOut("slow");
+  });
+
+  $('#before_imagequal').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStartqual = new Date().getTime();
+      var timerqual = setInterval(function() {
+          var nowqual = new Date().getTime();
+          var remainingqual = Math.max(0, 1000 - (nowqual - timeStartqual));
+          $("#cntrqual").html((remainingqual / 1000).toFixed(1));
+         if (remainingqual <= 0) {
+              clearInterval(timerqual);
+          }
+      }, 100);
+
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+
+      $("#after_imagequal").delay(1000).fadeOut("slow");
+  });
+
+  });//]]> 
+
+  </script><script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "d1yshLg4"
+      }], "*")
+    }
+  </script>
+<p><a href="#nogo" title="Close"><script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame2", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "d1yshLg42"
+      }], "*")
+    }
+  </script> </a></p>
+
+<h2>2 part HIT:</h2>
+
+<ol>
+	<li>
+	<h2>Qualifying question = base rate of $0.10</h2>
+	</li>
+	<li>
+	<h2>Actual HIT = base rate + bonus of $1.40 (We guarantee&nbsp;this if you pass the easy qualifying question)</h2>
+	</li>
+</ol>
+
+<h3>&nbsp;</h3>
+
+<h3>Before you begin:</h3>
+
+<ul>
+	<li>We have had some trouble with some participants not being able to view images, so, we want to see if it works for you before you complete the full HIT.</li>
+	<li>The base rate is for the test below, and underneath it is the real HIT</li>
+	<li>Due to the restrictions on Mechanical Turk, we need to award the rest of the HIT as a bonus.</li>
+	<li>If you can see the test image and answer the question, please proceed to the rest of the HIT - you will definitely get your bonus if you do this!</li>
+</ul>
+
+<div>
+<h1>&nbsp;</h1>
+
+<h1><span style="color: rgb(0, 0, 128);"><u>Test Image&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></h1>
+</div>
+
+<div>&nbsp;</div>
+
+<div>Take a look at the next image and answer the question below it.</div>
+
+<div>Click to reveal the image.</div>
+
+<div>It will only appear for a short time, so&nbsp;<strong>only click it when you are ready</strong>.</div>
+
+<div>&nbsp;</div>
+
+<div id="before_imagequal"><a href="#nogo" title="Other languages"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_imagequal" style="display:none;"><a href="#nogo" title="Other languages"><img a="" alt="" height="650px" src="https://i.imgur.com/y9kNMEh.jpg" /></a></div>
+
+<p><a href="#nogo" title="Other languages">Time Remaining: <span id="cntrqual">1.0</span> seconds</a></p>
+
+<h3><span style="color: rgb(128, 0, 128);">Qualifying question: What animal was shown in the above image (answer only if you saw the image)</span></h3>
+
+<div class="radio"><label><input id="Dog" name="QualQues" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Dog</span></label></div>
+
+<div class="radio"><label><input id="Cat" name="QualQues" required="" type="radio" value="2" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Cat</span></label></div>
+
+<div class="radio"><label><input id="Horse" name="QualQues" required="" type="radio" value="3" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Horse</span></label></div>
+
+<div class="radio"><label><input id="Pig" name="QualQues" required="" type="radio" value="4" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Pig</span></label></div>
+
+<div>&nbsp;</div>
+
+<div>Could you see this image and answer the question easily?&nbsp;</div>
+
+<ul>
+	<li><span style="color:#008000;">Yes =&nbsp;Please continue to the rest of the HIT for a <strong>bonus</strong> of <strong><u>$1.40</u></strong> (totalling $1.50 for the entire HIT)</span></li>
+	<li><span style="color:#A52A2A;">No =&nbsp;Please stop here, click &#39;<strong>submit</strong>&#39; at the bottom and you will be rewarded $0.10 for what you have completed so far. Thank you for your participation.</span></li>
+</ul>
+
+<div>&nbsp;</div>
+
+<h1><u><span style="color:#006400;">If you could answer the above, please proceed&nbsp;to receive your bonus:</span></u></h1>
+
+<div>&nbsp;</div>
+
+<div>For each of the following images, you will be asked <span style="color: rgb(0, 0, 128);"><strong><u>3 Questions</u></strong></span>. Please answer all three for each image.</div>
+
+<div>&nbsp;</div>
+
+<div>The first question for each image will ask&nbsp;following TWO questions:&nbsp;</div>
+
+<h3>&nbsp;</h3>
+
+<h3><span style="color:#800080;">${InstructionQn1}</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">${InstructionQn2}</span></h3>
+
+<h3>&nbsp;</h3>
+
+<div>Please read them before continuing and keep them both in mind as you view each image. You will be asked for your combined answers to these questions about each image (e.g. yes yes, yes no, no yes, no no).</div>
+
+<div>&nbsp;</div>
+
+<div><u><span style="color:#A52A2A;">​Important:&nbsp;</span></u>Each image will only display for <strong>1 second </strong>each.</div>
+
+<div>&nbsp;</div>
+
+<div>Make sure you are ready to view each before pressing &ldquo;click to view&rdquo;, as you will only have one chance to view each of them.​</div>
+
+<p>&nbsp;</p>
+
+<h1><span style="color:#000080;"><u>Image 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></span></h1>
+
+<div>Take a look at the next image and answer the question below it.</div>
+
+<div>Click to reveal the image.</div>
+
+<div>It will only appear for a short time, so <strong>only click it when you are ready</strong>.</div>
+
+<div id="before_image"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></div>
+
+<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="${img_1}" /></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 1 Question 1:</u></strong> </span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">${1Qn1}</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">${1Qn2}</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">${1ShortQn1}</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;&nbsp;<span style="color:#008080;">${1ShortQn2}</span><span style="color:#8B4513;">&nbsp;</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question1" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question1" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 1 Question 2:</u></strong>&nbsp;</span></h2>
+
+<div>On the slider below, indicate how&nbsp;<strong><em>confident</em></strong>&nbsp;you are in your decision&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident ---------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence1" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 1&nbsp;Question 3:</u></strong> </span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning1" name="reasoning_1" rows="4">  
+  </textarea></p>
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<p><a href="#nogo" title="Close"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script> </a></p>
+
+<div style="display:inline-block;vertical-align:top;">
+<h3><strong>Please scroll to the next image below:</strong></h3>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
+
+<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
+
+<div>Click to reveal the image <em>when you are ready</em>.</div>
+
+<div>Again, it will only appear for a <em>short time</em>.</div>
+
+<h2>&nbsp;</h2>
+</div>
+
+<div id="before_image2"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="${img_2}" /></a></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 2 Question 1:</u></strong> </span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">${2Qn1}</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">${2Qn2}</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">${2ShortQn1}</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">${2ShortQn2}</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question2" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question2" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question2" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 2&nbsp;Question 2:</u></strong></span>&nbsp;&nbsp;</h2>
+
+<div>On the slider below, indicate how&nbsp;<strong><em>confident</em></strong>&nbsp;you are in your decision&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident -------------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence2" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 2 Question 3:</u></strong></span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning2" name="reasoning_2" rows="4">  
+  </textarea></p>
+
+<h3><strong>Please scroll to the next image below:</strong></h3>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
+
+<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
+
+<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
+
+<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+
+<h2>&nbsp;</h2>
+
+<div id="before_image3"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_image3" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="${img_3}" /></a></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr3">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 3 Question 1:</u></strong></span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">${3Qn1}</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">${3Qn2}</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">${3ShortQn1}</span>&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">${3ShortQn2}</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question3" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question3" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question3" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question3" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 3&nbsp;Question 2:</u></strong></span></h2>
+
+<div>On the slider below, indicate how&nbsp;<strong><em>confident</em></strong>&nbsp;you are in your decision&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident -------------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence3" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 3 Question 3:</u></strong> </span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning3" name="reasoning_3" rows="4">  
+  </textarea></p>
+
+<h2>&nbsp;</h2>
+
+<h3><strong>Please scroll to the next image below:</strong></h3>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
+
+<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
+
+<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
+
+<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+
+<h2>&nbsp;</h2>
+
+<div id="before_image4"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_image4" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="${img_4}" /></a></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr4">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 4 Question 1:</u></strong> </span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">${4Qn1}</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">${4Qn2}</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">${4ShortQn1}</span><span style="color: rgb(128, 0, 128);">&nbsp;</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">${4ShortQn2}</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question4" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question4" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question4" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question4" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 4&nbsp;Question 2:</u></strong></span></h2>
+
+<div>On the slider below, indicate how <strong><em>confident</em></strong> you are in your decision</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident -----------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence4" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 4 Question 2:</u></strong></span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning4" name="reasoning_4" rows="4">  
+  </textarea></p>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script>
+  type="text/javascript"
+  var rangeSlider = function(){
+  var slider = $('.range-slider'),
+      range = $('.range-slider__range'),
+      value = $('.range-slider__value');
+    
+  slider.each(function(){
+
+    value.each(function(){
+      var value = $(this).prev().attr('value');
+      $(this).html(value);
+    });
+
+    range.on('input', function(){
+      $(this).next(value).html(this.value);
+    });
+  });
+};
+
+rangeSlider();
+</script>
+<style type="text/css">*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 60px 20px;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 60px;
+  }
+}
+
+.range-slider {
+  margin: 60px 0 0 0%;
+}
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (73px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+.range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #2c3e50;
+  cursor: pointer;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+  background: #1abc9c;
+}
+.range-slider__range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+.range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+</style>
+<h2>&nbsp;</h2>
+
+<h2><strong>Thank you for your participation!&nbsp;</strong></h2>
+
+<p><strong>Note: After submitting this HIT, please <u>do not</u> complete another HIT in this group&nbsp;- duplicates from the same worker ID will be rejected.</strong></p>
