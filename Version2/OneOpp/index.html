@@ -38,6 +38,32 @@
   //        $('#before_image').show();
   //    });
     });
+      $('#before_image3').click(function ()
+    {
+       $('#before_image3').ready(function(event)
+       {
+           $('#before_image3').hide();
+           $('#after_image3').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+    });
+      $('#before_image4').click(function ()
+    {
+       $('#before_image4').ready(function(event)
+       {
+           $('#before_image4').hide();
+           $('#after_image4').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+    });
       $('#before_imagequal').click(function ()
     {
        $('#before_imagequal').ready(function(event)
@@ -58,8 +84,8 @@
       var timeStart = new Date().getTime();
       var timer = setInterval(function() {
           var now = new Date().getTime();
-          var remaining = Math.max(0, 2000 - (now - timeStart));
-          $("#cntr").html((remaining / 2000).toFixed(1));
+          var remaining = Math.max(0, 1000 - (now - timeStart));
+          $("#cntr").html((remaining / 1000).toFixed(1));
          if (remaining <= 0) {
               clearInterval(timer);
           }
@@ -67,7 +93,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image").delay(2000).fadeOut("slow");
+      $("#after_image").delay(1000).fadeOut("slow");
   });
   $('#before_image2').click(function() {
   //$(".after_image").click(function () {
@@ -76,8 +102,8 @@
       var timeStart2 = new Date().getTime();
       var timer2 = setInterval(function() {
           var now2 = new Date().getTime();
-          var remaining2 = Math.max(0, 2000 - (now2 - timeStart2));
-          $("#cntr2").html((remaining2 / 2000).toFixed(1));
+          var remaining2 = Math.max(0, 1000 - (now2 - timeStart2));
+          $("#cntr2").html((remaining2 / 1000).toFixed(1));
          if (remaining2 <= 0) {
               clearInterval(timer2);
           }
@@ -85,9 +111,44 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image2").delay(2000).fadeOut("slow");
+      $("#after_image2").delay(1000).fadeOut("slow");
   });
-  
+  $('#before_image3').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart3 = new Date().getTime();
+      var timer3 = setInterval(function() {
+          var now3 = new Date().getTime();
+          var remaining3 = Math.max(0, 1000 - (now3 - timeStart3));
+          $("#cntr3").html((remaining3 / 1000).toFixed(1));
+         if (remaining3 <= 0) {
+              clearInterval(timer3);
+          }
+      }, 100);
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      $("#after_image3").delay(1000).fadeOut("slow");
+  });
+  $('#before_image4').click(function() {
+  //$(".after_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      var timeStart4 = new Date().getTime();
+      var timer4 = setInterval(function() {
+          var now4 = new Date().getTime();
+          var remaining4 = Math.max(0, 1000 - (now4 - timeStart4));
+          $("#cntr4").html((remaining4 / 1000).toFixed(1));
+         if (remaining4 <= 0) {
+              clearInterval(timer4);
+          }
+      }, 100);
+  //$(".before_image").click(function () {
+  //        $("#after_image").fadeOut("slow");
+  //    }); 
+      $("#after_image4").delay(1000).fadeOut("slow");
+  });
   $('#before_imagequal').click(function() {
   //$(".after_image").click(function () {
   //        $("#after_image").fadeOut("slow");
@@ -95,8 +156,8 @@
       var timeStartqual = new Date().getTime();
       var timerqual = setInterval(function() {
           var nowqual = new Date().getTime();
-          var remainingqual = Math.max(0, 2000 - (nowqual - timeStartqual));
-          $("#cntrqual").html((remainingqual / 2000).toFixed(1));
+          var remainingqual = Math.max(0, 1000 - (nowqual - timeStartqual));
+          $("#cntrqual").html((remainingqual / 1000).toFixed(1));
          if (remainingqual <= 0) {
               clearInterval(timerqual);
           }
@@ -104,7 +165,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_imagequal").delay(2000).fadeOut("slow");
+      $("#after_imagequal").delay(1000).fadeOut("slow");
   });
   });//]]> 
   </script><script>
@@ -136,49 +197,16 @@
 
 <ol>
 	<li>
-	<h2>Qualifying question = to see if the page works on your browser (base rate of £.15)</h2>
+	<h2>Qualifying question = to see if the page works on your browser (base rate of £.20)</h2>
 	</li>
 	<li>
-	<h2>Actual questionnaire - if you are able to complete & see the image in the qualifying question (<strong>bonus</strong> rate of £.70)</h2>
+	<h2>Actual questionnaire - if you are able to complete & see the image in the qualifying question (<strong>bonus</strong> rate of £.80)</h2>
 	</li>
 </ol>
 
 <h3>&nbsp;</h3>
 
-<div>To learn more about this study in order to inform your consent to participate, you may click on this link to review for more information:&nbsp;<a href="https://lozelise.github.io/qutstudy/Consent">https://lozelise.github.io/qutstudy/Consent</a></div>
 
-<div>&nbsp;</div>
-
-<div>For the following, you will be shown&nbsp;pairs of images presented side by side and you will be asked to answer a question about each image in the pair: the one on the left and the one on the right. You will then be asked 2 questions about your decisions.</div>
-
-<div><em>Once you have answered a question, please do not go back and change your answer after you have moved to the next question - we want your initial impressions and there is no need to spend more time on our task than you need to.</em></div>
-
-<div>&nbsp;</div>
-
-<div>Please see the below as an example:
-<h3><span style="color: rgb(128, 0, 128);"><strong>Left:</strong>&nbsp; What was your first thought about what was on the left hand side?</span>&nbsp;&nbsp;<span style="color: rgb(139, 69, 19);">&nbsp;</span></h3>
-
-<p><span style="color: rgb(128, 0, 128);">&nbsp; &nbsp; &nbsp; &nbsp; a) Thought was about&nbsp;<strong>the&nbsp;<em>person&nbsp;</em>in the image</strong> (e.g., do you like this person?, do you know much about them?, etc.)</span>, &nbsp;</p>
-
-<p><span style="color: rgb(128, 0, 128);">&nbsp; &nbsp; &nbsp; &nbsp; b) Thought was about&nbsp;<strong>how the&nbsp;<em>image looked</em></strong> (e.g., did it look manipulated in any way?, did it look as you'd expect?, etc.)</span>, &nbsp;</p>
-
-<h3><span style="color: rgb(0, 128, 128);"><strong>Right:</strong>&nbsp;What was your first thought about what was on the right hand side?</span><span style="color: rgb(139, 69, 19);">&nbsp;</span></h3>
-
-<p><span style="color: rgb(0, 128, 128);">&nbsp; &nbsp; &nbsp; &nbsp; a) Thought was about&nbsp;<strong>the&nbsp;<em>person&nbsp;</em>in the image</strong> (e.g., do you like this person?, do you know much about them?, etc.)</span></p>
-
-<p><span style="color: rgb(0, 128, 128);">&nbsp; &nbsp; &nbsp; &nbsp; b) Thought was about&nbsp;<strong>how the&nbsp;<em>image looked</em></strong> (e.g., did it look manipulated in any way?, did it look as you'd expect?, etc.) </span></p>
-
-<p>&nbsp;</p>
-
-<p>For your convenience, the corresponding questions are displayed over the images before they are revealed. You will need to click to reveal both images at the same time, and they will&nbsp;<em>only display for&nbsp;<strong>2 seconds&nbsp;</strong>each once clicked,</em>&nbsp;so please be prepared.</p>
-
-<div>&nbsp;</div>
-
-<div>Make sure you are ready to view each before pressing &ldquo;click to view&rdquo;, as you will only have one chance to view each of them.​</div>
-
-<div>&nbsp;</div>
-
-<div>Please try the example below:</div>
 
 <div>
 <h1>&nbsp;</h1>
@@ -189,23 +217,22 @@
 <div>&nbsp;</div>
 
 <form method="POST" action="http://formspree.io/lauren.elise.f@gmail.com">
-<div>
 
+<div>Take a look at the next image and answer the question below it.</div>
+
+<div>Click to reveal the image.</div>
+
+<div>It will only appear for a short time, so&nbsp;<strong>only click it when you are ready</strong>.</div>
 
 <div>&nbsp;</div>
-</div>
-</div>
 
-<div>&nbsp;</div>
+<div id="before_imagequal"><a href="#nogo" title="Other languages"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
 
-<div id="before_imagequal"><a href="#nogo" title="Other languages"><img alt="" height="650px" src="https://i.imgur.com/U5MB3Ba.png" /></a></div>
+<div id="after_imagequal" style="display:none;"><a href="#nogo" title="Other languages"><img a="" alt="" height="650px" src="https://i.imgur.com/y9kNMEh.jpg" /></a></div>
 
-<div id="after_imagequal" style="display:none;"><a href="#nogo" title="Other languages"><img a="" alt="" height="650px" src="https://i.imgur.com/qHGIcKn.png" /></a></div>
+<p><a href="#nogo" title="Other languages">Time Remaining: <span id="cntrqual">1.0</span> seconds</a></p>
 
-<p><a href="#nogo" title="Other languages">Time Remaining: <span id="cntrqual">2.0</span> seconds</a></p>
-	
-
-<h3><span style="color: rgb(128, 0, 128);">Qualifying&nbsp;question: If you were able to see the displayed image pair, what animal was on the left hand side?</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Qualifying question: What animal was shown in the above image (answer only if you saw the image)</span></h3>
 
 <div class="radio"><label><input id="Dog" name="QualQues" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Dog</span></label></div>
 
@@ -217,78 +244,70 @@
 
 <div>&nbsp;</div>
 
-<h3><span style="color:#008080;">Qualifying&nbsp;question: If you were able to see the displayed image pair, what colour was the right hand side?</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Could you see this image and answer the question easily?&nbsp;</span></h3>
+	
+<ul>
+	<li><span style="color:#A52A2A;"><strong>No</strong> =&nbsp;Please stop here, no need to continue as it appears the images are not displaying on your browser. Please press the below 'submit' button instead of the one at the end of the page.</span></li>
+<div>Note: don't forget to enter your Prolific ID before pressing submit.</div>
+<p><div><strong>If you would like to stop here, please enter your Prolific ID:</strong></dv><textarea cols="50" id="prolificid1" name="prolificid1" rows="1">  
+	</textarea></p> <div>ONLY if <u>not</u> continuing:</div><input type="submit" value="Send"><input type="hidden" name="_next" value="https://lozelise.github.io/qutstudy/Submitted" /></form>
 
-<div class="radio"><label><input id="green" name="QualQues2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Green</span></label></div>
-
-<div class="radio"><label><input id="blue" name="QualQues2" required="" type="radio" value="2" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Blue</span></label></div>
-
-<div class="radio"><label><input id="yellow" name="QualQues2" required="" type="radio" value="3" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Yellow</span></label></div>
-
-<div class="radio"><label><input id="red" name="QualQues2" required="" type="radio" value="4" />&nbsp;&nbsp;<span style="color:rgb(0, 0, 128);">Red</span></label></div>
+<div>&nbsp;</div>	
+<li><span style="color:#008000;"><strong>Yes</strong> =&nbsp;Please continue to the rest of the images/questions</u></strong> (totalling £1.00 for the entire task) and hit the 'submit' button at the bottom of the page</span></li>
+</ul>
 
 <div>&nbsp;</div>
 
-<h3><span style="color:#000080;">Could you see the images once revealed and answer the questions easily?&nbsp;</span></h3>
 
-<p>&nbsp;</p>
 
-<div>
-<ul>
-	<li><span style="color: rgb(0, 128, 0);"><strong>Yes</strong>&nbsp;=&nbsp;Please <u>continue</u> to the rest of the images/questions (totalling &pound;.85 for the entire task) and hit the &#39;submit&#39; button at the bottom of the page</span></li>
-</ul>
-
-<p><span style="color: rgb(0, 128, 0);">​​</span></p>
-</div>
-
-<ul>
-	<li><span style="color: rgb(165, 42, 42);"><strong>No</strong>&nbsp;=&nbsp;Please stop here, no need to continue as it appears the images are not displaying on your browser. Please press the below &#39;submit&#39; button instead of the one at the end of the page.</span></li>
-</ul>
-
-<div><span style="color:#B22222;">Note: don&#39;t forget to enter your Prolific ID before pressing submit.</span></div>
-
-<p>&nbsp;</p>
-
-<div><strong><span style="color:#B22222;">If you would like to stop here, please enter your Prolific ID</span>:</strong><textarea cols="50" id="prolificid1" name="prolificid1" rows="1">  
-	</textarea>
-
-<p>&nbsp;</p>
-
-<div>ONLY if <u>not</u> continuing:</div><input type="submit" value="Send"><input type="hidden" name="_next" value="https://lozelise.github.io/qutstudy/Submitted" /></form>
-	<div>&nbsp;</div>
-</div>
-
-<div>&nbsp;</div>
 
 <h1><u><span style="color:#006400;">If you could answer the above, please proceed&nbsp;to receive your bonus:</span></u></h1>
 
 <div>&nbsp;</div>
 
-<form action="http://formspree.io/lauren.elise.f@gmail.com" method="POST">
-<div>&nbsp;</div>
+<form method="POST" action="http://formspree.io/lauren.elise.f@gmail.com">
 
-<div>
-<div>&nbsp;</div>
+<div>For each of the following images, you will be asked <span style="color: rgb(0, 0, 128);"><strong><u>3 Questions</u></strong></span>. Please answer all three for each image.</div>
 
 <div>&nbsp;</div>
+
+<div>The first question for each image will ask&nbsp;following TWO questions:&nbsp;</div>
+
+<h3>&nbsp;</h3>
+
+<h3><span style="color:#800080;">Do you think the person in this image is an honest person?/ Do you think the animal in this image is safe to pet?</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+
+<h3>&nbsp;</h3>
+
+<div>Please read them before continuing and keep them both in mind as you view each image. You will be asked for your combined answers to these questions about each image (e.g. yes yes, yes no, no yes, no no).</div>
+
+<div>&nbsp;</div>
+
+<div><u><span style="color:#A52A2A;">​Important:&nbsp;</span></u>Each image will only display for <strong>1 second </strong>each.</div>
+
+<div>&nbsp;</div>
+
+<div>Make sure you are ready to view each before pressing &ldquo;click to view&rdquo;, as you will only have one chance to view each of them.​</div>
 
 <p>&nbsp;</p>
 
 <h1><span style="color:#000080;"><u>Image 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></span></h1>
 
-<div>Take a look at the next pair of images and answer the question below them.</div>
+<div>Take a look at the next image and answer the question below it.</div>
 
-<div>Click to reveal the pair of images.</div>
+<div>Click to reveal the image.</div>
 
-<div>They will only appear for a short time, so <strong>only click to reveal them when you are ready</strong>.</div>
+<div>It will only appear for a short time, so <strong>only click it when you are ready</strong>.</div>
 
-<div id="before_image"><img alt="" height="650px" src="https://i.imgur.com/avt1puZ.png" /></div>
+<div id="before_image"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></div>
 
-<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://i.imgur.com/Frs3amo.png" /></div>
+<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://i.imgur.com/rISagFN.jpg" /></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">2.0</span> seconds</a></p>
-
-<p>&nbsp;</p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">1.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
@@ -296,19 +315,29 @@
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 1 Question 1:</u></strong></span></h2>
+<p>&nbsp;</p>
 
-<h3><span style="color: rgb(128, 0, 128);"><strong>Left:</strong>&nbsp; What was your first thought about what was on the left hand side?</span>&nbsp;&nbsp;<span style="color:#8B4513;">&nbsp;</span></h3>
+<h2><span style="color:#000080;"><strong><u>Image 1 Question 1:</u></strong> </span></h2>
 
-<div class="radio"><label><input id="Content" name="img1question1" required="" type="radio" value="Content" />&nbsp;&nbsp;<span style="color:#800080;">Thought was about <strong>the</strong> <strong><em>person</em> in the image</strong></span>&nbsp; &nbsp;</label></div>
+<h3><span style="color: rgb(128, 0, 128);">Do you think the person in this image is an honest person?</span></h3>
 
-<div class="radio"><label><input id="Representation" name="img1question1" required="" type="radio" value="Representation" />&nbsp; <span style="color:#800080;">Thought was about <strong>how the <em>image looked</em></strong></span><strong>&nbsp;</strong> &nbsp;</label></div>
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
 
-<h3><span style="color:#008080;"><strong>Right:</strong>&nbsp;What was your first thought about what was on the right hand side?</span><span style="color:#8B4513;">&nbsp;</span></h3>
+<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
 
-<div class="radio"><label><input id="Content" name="img1question2" required="" type="radio" value="Content" />&nbsp; &nbsp;<span style="color:#008080;">Thought was about <strong>the <em>person</em> in the image</strong></span></label></div>
+<p>Please answer:</p>
 
-<div class="radio"><label><input id="Representation" name="img1question2" required="" type="radio" value="Representation" />&nbsp; &nbsp;<span style="color:#008080;">Thought was about <strong>how the <em>image looked</em></strong></span></label></div>
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">Honest?</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;&nbsp;<span style="color:#008080;">Altered?</span><span style="color:#8B4513;">&nbsp;</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question1" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question1" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
@@ -324,11 +353,10 @@
 
 <h2><span style="color:#000080;"><strong><u>Image 1&nbsp;Question 3:</u></strong> </span></h2>
 
-<div>Please explain the reasoning behind your decisions</div>
+<div>Please explain the reasoning behind your decision</div>
 
 <p><textarea cols="150" id="reasoning1" name="reasoning_1" rows="4">  
   </textarea></p>
-</div>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 <p><a href="#nogo" title="Close"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script> </a></p>
 
@@ -352,30 +380,38 @@
 <h2>&nbsp;</h2>
 </div>
 
-<div id="before_image2"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/79uAAnk.png" /></a></div>
+<div id="before_image2"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
 
-<div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/qM2d8cP.png
+<div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/dBUMIwk.png
 " /></a></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">2.0</span> seconds</a></p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">1.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 2 Question 1:</u></strong></span></h2>
+<h2><span style="color:#000080;"><strong><u>Image 2 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(128, 0, 128);"><strong>Left:</strong>&nbsp;What was your first thought about what was on the left hand side?</span>&nbsp;&nbsp;<span style="color:#8B4513;">&nbsp;</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Do you think the animal in this image is safe to pet?</span></h3>
 
-<div class="radio"><label><input id="Content" name="img2question1" required="" type="radio" value="Content" />&nbsp;&nbsp;<span style="color:#800080;">Thought was about <strong>the</strong> <em><strong>animal</strong></em><strong> in the image</strong></span>&nbsp; &nbsp;</label></div>
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
 
-<div class="radio"><label><input id="Representation" name="img2question1" required="" type="radio" value="Representation" />&nbsp; <span style="color:#800080;">Thought was about <strong>how the <em>image looked</em></strong></span></label></div>
+<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
 
-<h3><span style="color:#008080;"><strong>Right:</strong>&nbsp;What was your first thought about what was on the right hand side?</span><span style="color:#8B4513;">&nbsp;</span></h3>
+<p>Please answer:</p>
 
-<div class="radio"><label><input id="Content" name="img2question2" required="" type="radio" value="Content" />&nbsp; &nbsp;<span style="color:#008080;">Thought was about <strong>the <em>animal</em> in the image</strong></span></label></div>
+<p>&nbsp;</p>
 
-<div class="radio"><label><input id="Representation" name="img2question2" required="" type="radio" value="Representation" />&nbsp; &nbsp;<span style="color:#008080;">Thought was about <strong>how the <em>image looked</em></strong></span></label></div>
+<h3><span style="color: rgb(128, 0, 128);">Safe?</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question2" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question2" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question2" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
@@ -391,11 +427,10 @@
 
 <h2><span style="color:#000080;"><strong><u>Image 2 Question 3:</u></strong></span></h2>
 
-<div>Please explain the reasoning behind your decisions</div>
+<div>Please explain the reasoning behind your decision</div>
 
 <p><textarea cols="150" id="reasoning2" name="reasoning_2" rows="4">  
   </textarea></p>
-
 
 <h3><strong>Please scroll to the next image below:</strong></h3>
 
@@ -407,8 +442,135 @@
 
 <p>&nbsp;</p>
 
+<h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
 
+<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
 
+<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
+
+<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+
+<h2>&nbsp;</h2>
+
+<div id="before_image3"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_image3" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/rSePd7i.jpg" /></a></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr3">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 3 Question 1:</u></strong></span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">Do you think the person in this image is an honest person?</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">Honest?</span>&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question3" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question3" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question3" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question3" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 3&nbsp;Question 2:</u></strong></span></h2>
+
+<div>On the slider below, indicate how&nbsp;<strong><em>confident</em></strong>&nbsp;you are in your decision&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident -------------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence3" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 3 Question 3:</u></strong> </span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning3" name="reasoning_3" rows="4">  
+  </textarea></p>
+
+<h2>&nbsp;</h2>
+
+<h3><strong>Please scroll to the next image below:</strong></h3>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
+
+<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
+
+<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
+
+<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+
+<h2>&nbsp;</h2>
+
+<div id="before_image4"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
+
+<div id="after_image4" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/18kHfw1.png" /></a></div>
+
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr4">1.0</span> seconds</a></p>
+
+<p>&nbsp;</p>
+
+<h2><span style="color:#000080;"><strong><u>Image 4 Question 1:</u></strong> </span></h2>
+
+<h3><span style="color: rgb(128, 0, 128);">Do you think the animal in this image is safe to pet?</span></h3>
+
+<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+
+<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+
+<p>Please answer:</p>
+
+<p>&nbsp;</p>
+
+<h3><span style="color: rgb(128, 0, 128);">Safe?</span><span style="color: rgb(128, 0, 128);">&nbsp;</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+
+<div class="radio"><label><input id="Yes_Yes" name="question4" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="Yes_No" name="question4" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
+
+<div class="radio"><label><input id="No_Yes" name="question4" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
+
+<div class="radio"><label><input id="No_No" name="question4" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+
+<h2>&nbsp;</h2>
+
+<h2><span style="color:#000080;"><strong><u>Image 4&nbsp;Question 2:</u></strong></span></h2>
+
+<div>On the slider below, indicate how <strong><em>confident</em></strong> you are in your decision</div>
+
+<div>&nbsp;</div>
+
+<div>(1=not at all confident -----------------------------------------------------------------------------------------------------------------------------------------------------------------&gt;&nbsp;7=extremely confident)</div>
+
+<div class="range-slider"><input class="range-slider__range" max="7" min="1" name="confidence4" type="range" value="1" /> <span class="range-slider__value">0</span></div>
+
+<h2><span style="color:#000080;"><strong><u>Image 4 Question 2:</u></strong></span></h2>
+
+<div>Please explain the reasoning behind your decision</div>
+
+<p><textarea cols="150" id="reasoning4" name="reasoning_4" rows="4">  
+  </textarea></p>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script>
   type="text/javascript"
   var rangeSlider = function(){
@@ -524,6 +686,7 @@ input::-moz-focus-outer {
 </style>
 <h2>&nbsp;</h2>
 	
+
 <div>Lastly, for our records, could you please indicate the country you are currently in?</div>
 
 <p><textarea cols="150" id="location" name="location" rows="1">  
