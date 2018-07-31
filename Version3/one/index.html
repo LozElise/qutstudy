@@ -84,8 +84,8 @@
       var timeStart = new Date().getTime();
       var timer = setInterval(function() {
           var now = new Date().getTime();
-          var remaining = Math.max(0, 1000 - (now - timeStart));
-          $("#cntr").html((remaining / 1000).toFixed(1));
+          var remaining = Math.max(0, 2000 - (now - timeStart));
+          $("#cntr").html((remaining / 2000).toFixed(1));
          if (remaining <= 0) {
               clearInterval(timer);
           }
@@ -93,7 +93,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image").delay(1000).fadeOut("slow");
+      $("#after_image").delay(2000).fadeOut("slow");
   });
   $('#before_image2').click(function() {
   //$(".after_image").click(function () {
@@ -102,8 +102,8 @@
       var timeStart2 = new Date().getTime();
       var timer2 = setInterval(function() {
           var now2 = new Date().getTime();
-          var remaining2 = Math.max(0, 1000 - (now2 - timeStart2));
-          $("#cntr2").html((remaining2 / 1000).toFixed(1));
+          var remaining2 = Math.max(0, 2000 - (now2 - timeStart2));
+          $("#cntr2").html((remaining2 / 2000).toFixed(1));
          if (remaining2 <= 0) {
               clearInterval(timer2);
           }
@@ -111,7 +111,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image2").delay(1000).fadeOut("slow");
+      $("#after_image2").delay(2000).fadeOut("slow");
   });
   $('#before_image3').click(function() {
   //$(".after_image").click(function () {
@@ -120,8 +120,8 @@
       var timeStart3 = new Date().getTime();
       var timer3 = setInterval(function() {
           var now3 = new Date().getTime();
-          var remaining3 = Math.max(0, 1000 - (now3 - timeStart3));
-          $("#cntr3").html((remaining3 / 1000).toFixed(1));
+          var remaining3 = Math.max(0, 2000 - (now3 - timeStart3));
+          $("#cntr3").html((remaining3 / 2000).toFixed(1));
          if (remaining3 <= 0) {
               clearInterval(timer3);
           }
@@ -129,7 +129,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image3").delay(1000).fadeOut("slow");
+      $("#after_image3").delay(2000).fadeOut("slow");
   });
   $('#before_image4').click(function() {
   //$(".after_image").click(function () {
@@ -138,8 +138,8 @@
       var timeStart4 = new Date().getTime();
       var timer4 = setInterval(function() {
           var now4 = new Date().getTime();
-          var remaining4 = Math.max(0, 1000 - (now4 - timeStart4));
-          $("#cntr4").html((remaining4 / 1000).toFixed(1));
+          var remaining4 = Math.max(0, 2000 - (now4 - timeStart4));
+          $("#cntr4").html((remaining4 / 2000).toFixed(1));
          if (remaining4 <= 0) {
               clearInterval(timer4);
           }
@@ -147,7 +147,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image4").delay(1000).fadeOut("slow");
+      $("#after_image4").delay(2000).fadeOut("slow");
   });
   $('#before_imagequal').click(function() {
   //$(".after_image").click(function () {
@@ -156,8 +156,8 @@
       var timeStartqual = new Date().getTime();
       var timerqual = setInterval(function() {
           var nowqual = new Date().getTime();
-          var remainingqual = Math.max(0, 1000 - (nowqual - timeStartqual));
-          $("#cntrqual").html((remainingqual / 1000).toFixed(1));
+          var remainingqual = Math.max(0, 2000 - (nowqual - timeStartqual));
+          $("#cntrqual").html((remainingqual / 2000).toFixed(1));
          if (remainingqual <= 0) {
               clearInterval(timerqual);
           }
@@ -165,7 +165,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_imagequal").delay(1000).fadeOut("slow");
+      $("#after_imagequal").delay(2000).fadeOut("slow");
   });
   });//]]> 
   </script><script>
@@ -291,7 +291,7 @@
 
 <div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://i.imgur.com/rISagFN.jpg" /></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">1.0</span> seconds</a></p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">2.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
@@ -309,11 +309,9 @@
 
 <p>&nbsp;</p>
 
-<h3><span style="color: rgb(128, 0, 128);">Honest?</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;&nbsp;<span style="color:#008080;">Altered?</span><span style="color:#8B4513;">&nbsp;</span></h3>
+<div class="radio"><label><input id="Yes" name="Img1question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span></label></div>
 
-<div class="radio"><label><input id="Yes" name="question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="No" name="question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">No</span></label></div>
+<div class="radio"><label><input id="No" name="Img1question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
@@ -347,7 +345,7 @@
 
 <h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
 
-<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
+<div><strong>As above, please take a look at the next image and answer the questions below it.</strong>&nbsp;</div>
 
 <div>Click to reveal the image <em>when you are ready</em>.</div>
 
@@ -361,7 +359,7 @@
 <div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/dBUMIwk.png
 " /></a></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">1.0</span> seconds</a></p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">2.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
@@ -369,25 +367,15 @@
 
 <h2><span style="color:#000080;"><strong><u>Image 2 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(128, 0, 128);">Do you think the animal in this image is safe to pet?</span></h3>
-
-<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
-
-<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Do you trust what you just saw above?</span></h3>
 
 <p>Please answer:</p>
 
 <p>&nbsp;</p>
 
-<h3><span style="color: rgb(128, 0, 128);">Safe?</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+<div class="radio"><label><input id="Yes" name="Img2question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span></label></div>
 
-<div class="radio"><label><input id="Yes_Yes" name="question2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="Yes_No" name="question2" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
-
-<div class="radio"><label><input id="No_Yes" name="question2" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="No_No" name="question2" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+<div class="radio"><label><input id="No" name="Img2question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
@@ -432,33 +420,23 @@
 
 <div id="after_image3" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/rSePd7i.jpg" /></a></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr3">1.0</span> seconds</a></p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr3">2.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 3 Question 1:</u></strong></span></h2>
+<h2><span style="color:#000080;"><strong><u>Image 3 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(128, 0, 128);">Do you think the person in this image is an honest person?</span></h3>
-
-<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
-
-<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Do you trust what you just saw above?</span></h3>
 
 <p>Please answer:</p>
 
 <p>&nbsp;</p>
 
-<h3><span style="color: rgb(128, 0, 128);">Honest?</span>&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+<div class="radio"><label><input id="Yes" name="Img3question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span></label></div>
 
-<div class="radio"><label><input id="Yes_Yes" name="question3" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="Yes_No" name="question3" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
-
-<div class="radio"><label><input id="No_Yes" name="question3" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="No_No" name="question3" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+<div class="radio"><label><input id="No" name="Img3question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
@@ -509,25 +487,15 @@
 
 <h2><span style="color:#000080;"><strong><u>Image 4 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(128, 0, 128);">Do you think the animal in this image is safe to pet?</span></h3>
-
-<h3>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>AND</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
-
-<h3><span style="color:#008080;">Do you think this image has been altered in some way?</span></h3>
+<h3><span style="color: rgb(128, 0, 128);">Do you trust what you just saw above?</span></h3>
 
 <p>Please answer:</p>
 
 <p>&nbsp;</p>
 
-<h3><span style="color: rgb(128, 0, 128);">Safe?</span><span style="color: rgb(128, 0, 128);">&nbsp;</span>&nbsp;&nbsp;<strong>AND</strong>&nbsp;<span style="color:#008080;">Altered?</span></h3>
+<div class="radio"><label><input id="Yes" name="Img4question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span></label></div>
 
-<div class="radio"><label><input id="Yes_Yes" name="question4" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="Yes_No" name="question4" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">Yes</span>, &nbsp; <span style="color:#008080;">No</span></label></div>
-
-<div class="radio"><label><input id="No_Yes" name="question4" required="" type="radio" value="3" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">Yes</span></label></div>
-
-<div class="radio"><label><input id="No_No" name="question4" required="" type="radio" value="4" />&nbsp; <span style="color:#800080;">No</span>, &nbsp; &nbsp;<span style="color:#008080;">No</span></label></div>
+<div class="radio"><label><input id="No" name="Img4question1" required="" type="radio" value="2" />&nbsp; <span style="color:#800080;">No</span></label></div>
 
 <h2>&nbsp;</h2>
 
