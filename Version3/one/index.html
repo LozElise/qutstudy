@@ -106,7 +106,7 @@
          if (remaining <= 0) {
               clearInterval(timer);
           }
-      }, 200);
+      }, 100);
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
@@ -122,11 +122,11 @@
       var timerq1 = setInterval(function() {
           var nowq1 = new Date().getTime();
           var remainingq1 = Math.max(0, 10000 - (nowq1 - timeStartq1));
-          $("#cntrq1").html((remainingq1 / 10000).toFixed(1));
+          $("#cntrq1").html((remainingq1 / 1000).toFixed(1));
          if (remainingq1 <= 0) {
               clearInterval(timerq1);
           }
-      }, 1000);
+      }, 100);
 //      $("#after_quest1").delay(99999).fadeOut("slow");
   });
 	  
