@@ -121,7 +121,7 @@
       var timeStartq1 = new Date().getTime();
       var timerq1 = setInterval(function() {
           var nowq1 = new Date().getTime();
-          var remainingq1 = Math.max(0, 10000 - (nowq1 - timeStartq1));
+          var remainingq1 = Math.max(0, 5000 - (nowq1 - timeStartq1));
           $("#cntrq1").html((remainingq1 / 1000).toFixed(1));
          if (remainingq1 <= 0) {
               clearInterval(timerq1);
@@ -338,7 +338,7 @@
 
 <h3><span style="color: rgb(0, 128, 128);">Do you feel you could trust what you just saw above?</span></h3>
 
-	<p>Please answer within the <strong>10 seconds</strong> on the countdown:</p>
+	<p>Please answer within the <strong>5 seconds</strong> on the countdown:</p>
 
 <div id="before_quest1"><img alt="" height="100px" src="https://i.imgur.com/cZR2xu2.png" /></div>
 
