@@ -53,6 +53,21 @@
   //        $('#before_image').show();
   //    });
     });
+	  
+    $('#before_quest2').click(function ()
+    {
+       $('#before_quest2').ready(function(event)
+       {
+           $('#before_quest2').hide();
+           $('#after_quest2').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+	  
       $('#before_image3').click(function ()
     {
        $('#before_image3').ready(function(event)
@@ -66,6 +81,21 @@
   //        $('#before_image').show();
   //    });
     });
+	  
+    $('#before_quest3').click(function ()
+    {
+       $('#before_quest3').ready(function(event)
+       {
+           $('#before_quest3').hide();
+           $('#after_quest3').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+	  
       $('#before_image4').click(function ()
     {
        $('#before_image4').ready(function(event)
@@ -79,6 +109,21 @@
   //        $('#before_image').show();
   //    });
     });
+	  
+    $('#before_quest4').click(function ()
+    {
+       $('#before_quest4').ready(function(event)
+       {
+           $('#before_quest4').hide();
+           $('#after_quest4').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+	  
       $('#before_imagequal').click(function ()
     {
        $('#before_imagequal').ready(function(event)
@@ -149,6 +194,25 @@
   //    }); 
       $("#after_image2").delay(2000).fadeOut("slow");
   });
+	 
+	  
+	    $('#before_quest2').click(function() {
+  //$(".after_quest2").click(function () {
+  //        $("#after_quest2").fadeOut("slow");
+  //    }); 
+      var timeStartq2 = new Date().getTime();
+      var timerq2 = setInterval(function() {
+          var nowq2 = new Date().getTime();
+          var remainingq2 = Math.max(0, 5000 - (nowq2 - timeStartq2));
+          $("#cntrq2").html((remainingq2 / 1000).toFixed(1));
+         if (remainingq2 <= 0) {
+              clearInterval(timerq2);
+          }
+      }, 100);
+//      $("#after_quest2").delay(99999).fadeOut("slow");
+  });
+	  
+	  
   $('#before_image3').click(function() {
   //$(".after_image").click(function () {
   //        $("#after_image").fadeOut("slow");
@@ -167,6 +231,24 @@
   //    }); 
       $("#after_image3").delay(2000).fadeOut("slow");
   });
+	  
+	    $('#before_quest3').click(function() {
+  //$(".after_quest3").click(function () {
+  //        $("#after_quest3").fadeOut("slow");
+  //    }); 
+      var timeStartq3 = new Date().getTime();
+      var timerq3 = setInterval(function() {
+          var nowq3 = new Date().getTime();
+          var remainingq3 = Math.max(0, 5000 - (nowq3 - timeStartq3));
+          $("#cntrq3").html((remainingq3 / 1000).toFixed(1));
+         if (remainingq3 <= 0) {
+              clearInterval(timerq3);
+          }
+      }, 100);
+//      $("#after_quest3").delay(99999).fadeOut("slow");
+  });
+	  
+	  
   $('#before_image4').click(function() {
   //$(".after_image").click(function () {
   //        $("#after_image").fadeOut("slow");
@@ -185,6 +267,24 @@
   //    }); 
       $("#after_image4").delay(2000).fadeOut("slow");
   });
+	  
+	    $('#before_quest4').click(function() {
+  //$(".after_quest4").click(function () {
+  //        $("#after_quest4").fadeOut("slow");
+  //    }); 
+      var timeStartq4 = new Date().getTime();
+      var timerq4 = setInterval(function() {
+          var nowq4 = new Date().getTime();
+          var remainingq4 = Math.max(0, 5000 - (nowq4 - timeStartq4));
+          $("#cntrq4").html((remainingq4 / 1000).toFixed(1));
+         if (remainingq4 <= 0) {
+              clearInterval(timerq4);
+          }
+      }, 100);
+//      $("#after_quest4").delay(99999).fadeOut("slow");
+  });
+	  
+	  
   $('#before_imagequal').click(function() {
   //$(".after_image").click(function () {
   //        $("#after_image").fadeOut("slow");
@@ -225,9 +325,10 @@
 <h3>Before you begin:</h3>
 
 <ul>
-	<li>Images may not display on all browsers.</li>
-	<li>The test/practice question is below to see if you are able to view the images, and underneath it are the real questions</li>
-	<li>If you can see the test image and answer the question, please proceed to the rest of the images and questions</li>
+	<li>For your information, please see the informed consent page (<a href="https://lozelise.github.io/qutstudy/Consent/">. By completing the following questions below, you agree to participate.</li>
+	<li>Images may not display on all browsers, so the first question is to test they are working for you. If they aren't, please finish there for the base rate.</li>
+	<li>As you view the rest of the images and complete the rest of the questions, keep an eye out for a bonus pop-up question. This will appear randomly for some people to test reflexes, and will appear somewhere within the screen for a couple of seconds. If it appears for you and you click it, your <strong>bonus will double</strong>, so make sure to keep an eye out!</li>
+	<li>Each image after the qualifying image will be followed by 3 questions: a quick-response test question, a scale question, and an explanation question.</li>
 </ul>
 <h2>2 parts:</h2>
 
@@ -309,32 +410,21 @@
 
 <div><u><span style="color:#A52A2A;">​Important:&nbsp;</span></u>Each image will only display for <strong>2 seconds </strong>each. You will also only have <strong>10 seconds</strong> to answer the first question of each image - these will be speed tests - before completing the rest.</div>
 
-<div>&nbsp;</div>
-<div><u><span style="color:#A52A2A;">​Important:&nbsp;</span></u>There also may be a bonus button pop up on the screen. This will appear only for some people, and can appear anywhere on the screen. Clicking this will double your bonus on prolific. This will only appear for a random selection of participants, and can appear at any time during the experiment. Make sure you keep a look out for it. </div>
-
-<div>&nbsp;</div>
-
 <div>Make sure you are ready to view each before pressing &ldquo;click to view&rdquo;, as you will only have one chance to view each of them.​</div>
 
 <p>&nbsp;</p>
 
 <h1><span style="color:#000080;"><u>Image 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u></span></h1>
 
-<div>Take a look at the next image and answer the questions below it.</div>
-
-<div>Click to reveal the image.</div>
-
-<div>It will only appear for a short time, so <strong>only click it when you are ready</strong>.</div>
-
 <div id="before_image"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></div>
 
-<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://i.imgur.com/rISagFN.jpg" /></div>
+<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://i.imgur.com/C21lem3.jpg" /></div>
 
 <p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">2.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;">(speed test)<strong><u> Image 1 Question 1:</u></strong> </span></h2>
+<h2><span style="color:#000080;">(speed test): <strong><u> Image 1 Question 1:</u></strong> </span></h2>
 
 <h3><span style="color: rgb(0, 128, 128);">Do you feel you could trust what you just saw above?</span></h3>
 
@@ -344,7 +434,7 @@
 
 <div id="after_quest1" style="display:none;">
 
-<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1">10.0</span> seconds</strong></span></a></p>
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1">5.0</span> seconds</strong></span></a></p>
 
 <div class="radio"><label><input id="Yes" name="Img1question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
 
@@ -393,17 +483,11 @@
 
 <div><strong>As above, please take a look at the next image and answer the questions below it.</strong>&nbsp;</div>
 
-<div>Click to reveal the image <em>when you are ready</em>.</div>
-
-<div>Again, it will only appear for a <em>short time</em>.</div>
-
-<h2>&nbsp;</h2>
 </div>
 
 <div id="before_image2"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
 
-<div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/dBUMIwk.png
-" /></a></div>
+<div id="after_image2" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/LsJn7Sg.jpg" /></a></div>
 
 <p><a href="#nogo" title="Close">Time Remaining: <span id="cntr2">2.0</span> seconds</a></p>
 
@@ -411,18 +495,24 @@
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 2 Question 1:</u></strong> </span></h2>
+<h2><span style="color:#000080;">(speed test): <strong><u> Image 2 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(0, 128, 128);">Do you trust what you just saw above?</span></h3>
+<h3><span style="color: rgb(0, 128, 128);">Do you feel you could trust what you just saw above?</span></h3>
 
-<p>Please answer:</p>
+	<p>Please answer within the <strong>5 seconds</strong> on the countdown:</p>
 
-<div class="radio"><label><input id="Yes" name="Img2question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+<div id="before_quest2"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
 
-<div class="radio"><label><input id="No" name="Img2question1" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+<div id="after_quest2" style="display:none;">
 
-<h2>&nbsp;</h2>
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq2">5.0</span> seconds</strong></span></a></p>
 
+<div class="radio"><label><input id="Yes" name="Img1question2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+
+<div class="radio"><label><input id="No" name="Img1question2" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+
+<h2>&nbsp;</h2></div>
+	
 <h2><span style="color:#000080;"><strong><u>Image 2&nbsp;Question 2:</u></strong></span>&nbsp;&nbsp;</h2>
 
 <div>On the slider below, indicate how&nbsp;<strong><em>confident</em></strong>&nbsp;you are in your decision&nbsp;</div>
@@ -452,17 +542,13 @@
 
 <h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
 
-<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
-
-<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
-
-<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+<div><strong>As above, please take a look at the next image and answer the questions below it.</strong>&nbsp;</div>
 
 <h2>&nbsp;</h2>
 
 <div id="before_image3"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
 
-<div id="after_image3" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/rSePd7i.jpg" /></a></div>
+<div id="after_image3" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/bQjtAqs.jpg" /></a></div>
 
 <p><a href="#nogo" title="Close">Time Remaining: <span id="cntr3">2.0</span> seconds</a></p>
 
@@ -470,17 +556,23 @@
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 3 Question 1:</u></strong> </span></h2>
+<h2><span style="color:#000080;">(speed test): <strong><u> Image 3 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(0, 128, 128);">Do you trust what you just saw above?</span></h3>
+<h3><span style="color: rgb(0, 128, 128);">Do you feel you could trust what you just saw above?</span></h3>
 
-<p>Please answer:</p>
+	<p>Please answer within the <strong>5 seconds</strong> on the countdown:</p>
 
-<div class="radio"><label><input id="Yes" name="Img3question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+<div id="before_quest3"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
 
-<div class="radio"><label><input id="No" name="Img3question1" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+<div id="after_quest3" style="display:none;">
 
-<h2>&nbsp;</h2>
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq3">5.0</span> seconds</strong></span></a></p>
+
+<div class="radio"><label><input id="Yes" name="Img1question3" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+
+<div class="radio"><label><input id="No" name="Img1question3" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+
+<h2>&nbsp;</h2></div>
 
 <h2><span style="color:#000080;"><strong><u>Image 3&nbsp;Question 2:</u></strong></span></h2>
 
@@ -511,33 +603,35 @@
 
 <h1><a href="#nogo" title="Close"><span style="color:#000080;"><u>Image 4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u></span></a></h1>
 
-<div><strong>As above, please take a look at the next image and answer the question below it.</strong>&nbsp;</div>
-
-<div>Click to reveal the image&nbsp;<em>when you are ready</em>.</div>
-
-<div>Again, it will only appear for a&nbsp;<em>short time</em>.</div>
+<div><strong>As above, please take a look at the next image and answer the questions below it.</strong>&nbsp;</div>
 
 <h2>&nbsp;</h2>
 
 <div id="before_image4"><a href="#nogo" title="Close"><img alt="" height="650px" src="https://i.imgur.com/cZR2xu2.png" /></a></div>
 
-<div id="after_image4" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/18kHfw1.png" /></a></div>
+<div id="after_image4" style="display:none;"><a href="#nogo" title="Close"><img a="" alt="" height="650px" src="https://i.imgur.com/X5DDSqh.jpg" /></a></div>
 
 <p><a href="#nogo" title="Close">Time Remaining: <span id="cntr4">1.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
-<h2><span style="color:#000080;"><strong><u>Image 4 Question 1:</u></strong> </span></h2>
+<h2><span style="color:#000080;">(speed test): <strong><u> Image 4 Question 1:</u></strong> </span></h2>
 
-<h3><span style="color: rgb(0, 128, 128);">Do you trust what you just saw above?</span></h3>
+<h3><span style="color: rgb(0, 128, 128);">Do you feel you could trust what you just saw above?</span></h3>
 
-<p>Please answer:</p>
+	<p>Please answer within the <strong>5 seconds</strong> on the countdown:</p>
 
-<div class="radio"><label><input id="Yes" name="Img4question1" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+<div id="before_quest4"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
 
-<div class="radio"><label><input id="No" name="Img4question1" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+<div id="after_quest4" style="display:none;">
 
-<h2>&nbsp;</h2>
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq4">5.0</span> seconds</strong></span></a></p>
+
+<div class="radio"><label><input id="Yes" name="Img1question4" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="color: rgb(0, 128, 128);"><strong>Yes</strong></span></label></div>
+
+<div class="radio"><label><input id="No" name="Img1question4" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
+
+<h2>&nbsp;</h2></div>
 
 <h2><span style="color:#000080;"><strong><u>Image 4&nbsp;Question 2:</u></strong></span></h2>
 
