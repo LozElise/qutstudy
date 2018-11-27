@@ -26,12 +26,26 @@
   //    });
     });
 	  
-    $('#before_quest1').click(function ()
+    $('#before_quest1_a').click(function ()
     {
-       $('#before_quest1').ready(function(event)
+       $('#before_quest1_a').ready(function(event)
        {
-           $('#before_quest1').hide();
-           $('#after_quest1').show();
+           $('#before_quest1_a').hide();
+           $('#after_quest1_a').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+	  
+    $('#before_quest1_b').click(function ()
+    {
+       $('#before_quest1_b').ready(function(event)
+       {
+           $('#before_quest1_b').hide();
+           $('#after_quest1_b').show();
        });
   //    $('#after_image').click(function(event)
   //    {
@@ -157,22 +171,37 @@
   //    }); 
       $("#after_image").delay(2000).fadeOut("slow");
   });
-	 
-	  
-	    $('#before_quest1').click(function() {
-  //$(".after_quest1").click(function () {
-  //        $("#after_quest1").fadeOut("slow");
+	
+	    $('#before_quest1_a').click(function() {
+  //$(".after_quest1_a").click(function () {
+  //        $("#after_quest1_a").fadeOut("slow");
   //    }); 
-      var timeStartq1 = new Date().getTime();
-      var timerq1 = setInterval(function() {
-          var nowq1 = new Date().getTime();
-          var remainingq1 = Math.max(0, 8000 - (nowq1 - timeStartq1));
-          $("#cntrq1").html((remainingq1 / 1000).toFixed(1));
-         if (remainingq1 <= 0) {
-              clearInterval(timerq1);
+      var timeStartq1_a = new Date().getTime();
+      var timerq1_a = setInterval(function() {
+          var nowq1_a = new Date().getTime();
+          var remainingq1_a = Math.max(0, 8000 - (nowq1_a - timeStartq1_a));
+          $("#cntrq1_a").html((remainingq1_a / 1000).toFixed(1));
+         if (remainingq1_a <= 0) {
+              clearInterval(timerq1_a);
           }
       }, 100);
-//      $("#after_quest1").delay(99999).fadeOut("slow");
+//      $("#after_quest1_a").delay(99999).fadeOut("slow");
+  });
+	  
+	    $('#before_quest1_b').click(function() {
+  //$(".after_quest1_b").click(function () {
+  //        $("#after_quest1_b").fadeOut("slow");
+  //    }); 
+      var timeStartq1_b = new Date().getTime();
+      var timerq1_b = setInterval(function() {
+          var nowq1_b = new Date().getTime();
+          var remainingq1_b = Math.max(0, 8000 - (nowq1_b - timeStartq1_b));
+          $("#cntrq1_b").html((remainingq1_b / 1000).toFixed(1));
+         if (remainingq1_b <= 0) {
+              clearInterval(timerq1_b);
+          }
+      }, 100);
+//      $("#after_quest1_b").delay(99999).fadeOut("slow");
   });
 	  
 	  
@@ -451,9 +480,9 @@ Prolific ID:</strong></div><textarea cols="50" id="prolificid1" name="prolificid
 
 	<p>Please answer BOTH quesions within the <strong>8 seconds</strong> on the countdown:</p>
 
-<div id="before_quest1"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
+<div id="before_quest1_a"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
 
-<div id="after_quest1" style="display:none;">
+<div id="after_quest1_a" style="display:none;">
 	
 <h3><span style="color: rgb(0, 128, 128);">a) Did you feel that this person was attractive?</span></h3>
 
@@ -461,7 +490,11 @@ Prolific ID:</strong></div><textarea cols="50" id="prolificid1" name="prolificid
 
 <div class="radio"><label><input id="No" name="Img1question1" required="" type="radio" value="2" />&nbsp; <span style="color: rgb(0, 128, 128);"><strong>No</strong></span></label></div>
 
-<h2>&nbsp;</h2>
+<h2>&nbsp;</h2></div>
+	
+<div id="before_quest1_b"><img alt="" height="100px" src="https://i.imgur.com/5vdbidX.png" /></div>
+
+<div id="after_quest1_b" style="display:none;">
 	
 <h3><span style="color: rgb(0, 128, 128);">b) While viewing, did you feel a sense of trust?</span></h3>
 
@@ -471,7 +504,7 @@ Prolific ID:</strong></div><textarea cols="50" id="prolificid1" name="prolificid
 	
 <p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1">8.0</span> seconds</strong></span></a></p>
 	
-<h2>&nbsp;</h2></div>
+<h2>&nbsp;</h2>
 
 <h2><span style="color:#000080;"><strong><u>Image 1 Question 2:</u></strong>&nbsp;</span></h2>
 
