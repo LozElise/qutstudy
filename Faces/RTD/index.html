@@ -76,7 +76,7 @@
       var timeStart = new Date().getTime();
       var timer = setInterval(function() {
           var now = new Date().getTime();
-          var remaining = Math.max(0, 2000 - (now - timeStart));
+          var remaining = Math.max(0, 1000 - (now - timeStart));
           $("#cntr").html((remaining / 1000).toFixed(1));
          if (remaining <= 0) {
               clearInterval(timer);
@@ -85,7 +85,7 @@
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image").delay(2000).fadeOut("slow");
+      $("#after_image").delay(1000).fadeOut("slow");
   });
 	
 	    $('#before_quest1_a').click(function() {
@@ -210,7 +210,7 @@
 
 <div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://lozelise.github.io/qutstudy/Faces/Example.png" /></div>
 
-<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">2.0</span> seconds</a></p>
+<p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">1.0</span> seconds</a></p>
 
 <p>&nbsp;</p>
 
