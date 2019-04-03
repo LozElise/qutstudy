@@ -132,7 +132,9 @@ button:hover {
        $('#before_quest1_b').ready(function(event)
        {
            $('#before_quest1_b').hide();
+	   $('#after_quest1_a').hide();
            $('#after_quest1_b').show();
+	   
        });
   //    $('#after_image').click(function(event)
   //    {
@@ -146,7 +148,21 @@ button:hover {
        $('#before_quest1_c').ready(function(event)
        {
            $('#before_quest1_c').hide();
+	   $('#after_quest1_b').hide();
            $('#after_quest1_c').show();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+	  
+    $('input[type="radio"]','#after_quest1_c').click(function ()
+    {
+       $('#after_quest1_c').ready(function(event)
+       {
+	   $('#after_quest1_c').hide();
        });
   //    $('#after_image').click(function(event)
   //    {
