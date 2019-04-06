@@ -181,8 +181,8 @@ button:hover {
       var timeStart = new Date().getTime();
       var timer = setInterval(function() {
           var now = new Date().getTime();
-          var remaining = Math.max(0, 1000 - (now - timeStart));
-          $("#cntr").html((remaining / 1000).toFixed(1));
+          var remaining = Math.max(0, 800 - (now - timeStart));
+          $("#cntr").html((remaining / 800).toFixed(1));
          if (remaining <= 0) {
               clearInterval(timer);
           }
@@ -190,7 +190,7 @@ button:hover {
   //$(".before_image").click(function () {
   //        $("#after_image").fadeOut("slow");
   //    }); 
-      $("#after_image").delay(1000).fadeOut("slow");
+      $("#after_image").delay(800).fadeOut("slow");
   });
 	
 	    $('#before_quest1_a').click(function() {
@@ -308,7 +308,7 @@ button:hover {
 
 <div id="before_image"><img alt="" height="500px" src="https://i.imgur.com/cZR2xu2.png" /></div>
 
-<div id="after_image" style="display:none;"><img a="" alt="" height="650px" src="https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_dom_-2.00.png" /></div>
+<div id="after_image" style="display:none;"><img a="" alt="" height="400px" src="https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_dom_-2.00.png" /></div>
 
 <p><a href="#nogo" title="Close">Time Remaining: <span id="cntr">1.0</span> seconds</a></p>
 
