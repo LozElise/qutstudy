@@ -352,7 +352,6 @@ return BBoxAnnotator;
 }).call(this);
 // Main entry point. Use a placeholder for image urls.
 $(document).ready(function() {
-  var assignment_id = turkGetParam('assignmentId', "");
   // Initialize the bounding-box annotator.
   var annotator = new BBoxAnnotator({
     url: "${https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_twdom_0.00.png}",
