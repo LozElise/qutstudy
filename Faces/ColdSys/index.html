@@ -1,7 +1,7 @@
 <div style="display:none;">&nbsp;</div>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
 <div style="display:inline-block;vertical-align:top;">
-<h1>Draw a box around anything of/in the image which you <u>dis</u>trust, and type a short reason why.</h1>
+<h1>Draw a box around anything of/in the image which you <u>trust</u>, and type a short reason why.</h1>
 
 <p>Draw a rectangle using your mouse over the parts of the image that you find trustworthy. Then, <strong>type a label for why and press ENTER</strong>.</p>
 
@@ -354,7 +354,7 @@ return BBoxAnnotator;
 $(document).ready(function() {
   // Initialize the bounding-box annotator.
   var annotator = new BBoxAnnotator({
-    url: "${https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_twdom_0.00.png}",
+    url: "https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_twdom_0.00.png",
     input_method: 'text', // Can be one of ['text', 'select', 'fixed']
     labels: ["dress", "top", "skirt", "pants", "shoes"], // Label of the object.
     onchange: function(entries) {
