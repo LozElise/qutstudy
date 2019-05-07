@@ -5,16 +5,17 @@
 
 <p>Draw a rectangle using your mouse over the parts of the image that you find trustworthy. Then, <strong>type a label for why and press ENTER</strong>.</p>
 
-<p>Do this for as many things you can see that you fund trustworthy (<strong>note: can be parts of the image or things in the image</strong>)</p>
-
+<p>Do this for as many things you can see that you fund untrustworthy (<strong>note: can be parts of the image or things in the image</strong>)</p>
+<form>
 <div id="bbox_annotator" style="display:inline-block">&nbsp;</div>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
-<p id="button_paragraph"><input id="annotation_data" name="annotation_data" type="hidden" /> <input id="reset_button" type="reset" value="Reset" /></p>
+<p id="button_paragraph"><input id="annotation_data" name="annotation_data" type="hidden" /> <input id="reset_button" type="reset" value="Reset" /><input id="submitButton" type="submit" value="Submit"><input type="hidden" name="_next" value="https://lozelise.github.io/qutstudy/Submittedfull"/></p>
 </div>
+</form>
 <script type="text/javascript">
 (function() {
   var BBoxSelector;
@@ -356,10 +357,10 @@ $(document).ready(function() {
   var annotator = new BBoxAnnotator({
     url: "https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_twdom_0.00.png",
     input_method: 'text', // Can be one of ['text', 'select', 'fixed']
-    labels: ["dress", "top", "skirt", "pants", "shoes"], // Label of the object.
+    labels: ["eye", "nose", "mouth", "ear", "chin"], // Label of the object.
     onchange: function(entries) {
       $("#annotation_data").val(JSON.stringify(entries));
-      if (entries.length > 0 {
+      if (entries.length > 0) {
         $("#submitButton").removeAttr("disabled");
       }
       else {
@@ -374,6 +375,6 @@ $(document).ready(function() {
   // Disable the submission at the beginning.
   $("#submitButton").attr("disabled", "disabled");
   $("#submitButton").detach().appendTo("#button_paragraph");
-  console.log(assignment_id);
+
 });
 </script>
