@@ -447,7 +447,7 @@ $(document).ready(function() {
   var annotator = new BBoxAnnotator({
     url: "https://lozelise.github.io/qutstudy/Faces/LowRes/nexus2_1_twdom_0.00.png",
     input_method: 'text', // Can be one of ['text', 'select', 'fixed']
-    labels: ["eye", "nose", "mouth", "ear", "chin"], // Label of the object.
+     // Label of the object.
     onchange: function(entries) {
       $("#annotation_data").val(JSON.stringify(entries));
     }
@@ -493,25 +493,27 @@ $(document).ready(function() {
 </tr>
 <tr>
 <td>
+Studies have shown that people are able to determine the personalities and traits of other people simply by looking at their faces. We wish to test this by asking you to pick the features of the face presented to you that you think most indicate a particular trait. Please read the instructions below:
 <ol>
+
 <li>Please have a read of our informed consent page <a href="https://lozelise.github.io/qutstudy/Faces/Consent">here</a>. By completing the questions below, you agree to participate.<br /><br /></li>
-<li>Click the button to reveal the image. This will display for <strong>1</strong> second only. Try to keep the image in your head as you answer the questions that follow<br /><br /></li>
-<li>Answer the questions about the image as fast as you can<br /><br /></li>
+<li>You will be presented with three versions of the same image of a person's face, and asked to select areas of the image that you think most indicate particular traits in the person. You will then be asked to give your overall opinion.</li>
+<li>Please take care to think through your answers carefully, as we require your considered opinions<br /><br /></li>
 </ol>
 </td>
 </tr>
 </tbody>
 </table>
   </div>
- <div class="tab">Image and Question 1:
+ <div class="tab"> 
  <div style="display:none;">&nbsp;</div>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
 <div style="display:inline-block;vertical-align:top;">
-<h1>Draw a box around anything of/in the image which you <u>trust</u>, and type a short reason why.</h1>
+<h1>Trait 1: Intelligence/Unintelligence</h1>
 
-<p>Draw a rectangle using your mouse over the parts of the image that you find trustworthy. Then, <strong>type a label for why and press ENTER</strong>.</p>
+<p>1. Draw a rectangle using your mouse over as many parts of this face that you find to indicate the trait. Then, <strong>type a one or two word label for why, and press ENTER</strong>.</p>
 
-<p>Do this for as many things you can see that you fund untrustworthy (<strong>note: can be parts of the image or things in the image</strong>)</p>
+<p>Trait:<strong> intelligence/nonintelligence</strong></p>
 <div id="bbox_annotator" style="display:inline-block">&nbsp;</div>
 
 <p>&nbsp;</p>
@@ -520,21 +522,24 @@ $(document).ready(function() {
 
 <p id="button_paragraph"><input id="annotation_data" name="annotation_data" type="hidden" /> <input id="reset_button" type="reset" value="Reset" /></p>
 </div>
-
+<p>&nbsp;</p>
+<div>2. Overall, the person in this image appears to be: </div>
+  <p><label><input type="radio" name="intelligence" required style="horizontal-align: middle; margin: 0px;" value="intelligent"> an <strong>intelligent</strong> person</label></p>
+  <p><label><input type="radio" name="intelligence" required style="vertical-align: middle; margin: 0px;" value="not_intelligent"> an <strong>unintelligent</strong> person</label></p>
   </div>
 
   <div class="tab">Final Questions:
 <p> <div>Lastly, for our records, could you please indicate the country you are currently in?</div></p>
 
-<p><input placeholder="Location" oninput="this.className = ''" name="Location"></p>
+<p><input placeholder="Location" oninput="this.className = ''" name="Location"required ></p>
 
 <div>And what gender you identify with?</div>
-  <p><label><input type="radio" name="gender" style="horizontal-align: middle; margin: 0px;" value="male"> Male</label></p>
-  <p><label><input type="radio" name="gender" style="vertical-align: middle; margin: 0px;" value="female"> Female</label></p>
-  <p><label><input type="radio" name="gender" style="vertical-align: middle; margin: 0px;" value="other"> Other</label></p>
+  <p><label><input type="radio" name="gender" required style="horizontal-align: middle; margin: 0px;" value="male"> Male</label></p>
+  <p><label><input type="radio" name="gender" required style="vertical-align: middle; margin: 0px;" value="female"> Female</label></p>
+  <p><label><input type="radio" name="gender" required style="vertical-align: middle; margin: 0px;" value="other"> Other</label></p>
 
 <p>Note: don't forget to enter your Prolific ID before pressing submit.</p>
-<p><input placeholder="ProlificID" oninput="this.className = ''" name="ProlificID"></p>
+<p><input placeholder="ProlificID" oninput="this.className = ''" name="ProlificID" required ></p>
 <input type="submit" value="Submit"><input type="hidden" name="_next" value="https://lozelise.github.io/qutstudy/Submittedfull" /></form>
   </div>
 
@@ -577,7 +582,7 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
-//  if (n == 1 && !validateForm()) return false;
+ // if (n == 1 && !validateForm()) return false;
   // Hide the current tab:
   x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
