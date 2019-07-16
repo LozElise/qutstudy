@@ -151,9 +151,11 @@ button:hover {
 	  
     $('input[type="radio"]','#after_quest1_c').click(function ()
     {
-       $('#after_quest1_c').ready(function(event)
+       $('#before_quest1_d').ready(function(event)
        {
+           $('#before_quest1_d').hide();
 	   $('#after_quest1_c').hide();
+           $('#after_quest1_d').show();
        });
   //    $('#after_image').click(function(event)
   //    {
@@ -161,6 +163,20 @@ button:hover {
   //        $('#before_image').show();
   //    });
       });
+	  
+    $('input[type="radio"]','#after_quest1_d').click(function ()
+    {
+       $('#after_quest1_d').ready(function(event)
+       {
+	   $('#after_quest1_d').hide();
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+
 	  
 	  
   $('#before_image').click(function() {
@@ -228,7 +244,25 @@ button:hover {
           }
       }, 100);
 //      $("#after_quest1_c").delay(99999).fadeOut("slow");
+  }); 
+	  
+	    $('input[type="radio"]','#after_quest1_c').click(function() {
+  //$(".after_quest1_d").click(function () {
+  //        $("#after_quest1_d").fadeOut("slow");
+  //    }); 
+      var timeStartq1_d = new Date().getTime();
+      var timerq1_d = setInterval(function() {
+          var nowq1_d = new Date().getTime();
+          var remainingq1_d = Math.max(0, 4000 - (nowq1_d - timeStartq1_d));
+          $("#cntrq1_d").html((remainingq1_d / 1000).toFixed(1));
+         if (remainingq1_d <= 0) {
+              clearInterval(timerq1_d);
+          }
+      }, 100);
+//      $("#after_quest1_c").delay(99999).fadeOut("slow");
   });  
+
+	  
   });//]]> 
   
   
@@ -346,6 +380,20 @@ button:hover {
 <div class="radio"><label><input id="nottrustworthy" name="trust" required="" type="radio" value="0" />&nbsp; <span style="vertical-align: middle; margin: 0px; color: rgb(107,142,35);">appears to be an <strong>untrustworthy</strong> person</span></label></div>
 	
 <p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_c">4.0</span> seconds</strong></span></a></p>
+	
+<h2>&nbsp;</h2></div>
+	
+<div id="before_quest1_d"><img alt="" height="100px" src="https://lozelise.github.io/qutstudy/Version4/DisplayQn2.png" /></div>
+
+<div id="after_quest1_d" style="display:none;">
+	
+<h3><span style="color: rgb(107,142,35);">d):</span></h3>
+
+<div class="radio"><label><input id="Dominant2" name="dominant2" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>dominant</strong> person</span></label></div>
+
+<div class="radio"><label><input id="Vulnerable2" name="dominant2" required="" type="radio" value="0" />&nbsp; <span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>vulnerable</strong> person</span></label></div>
+	
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_d">4.0</span> seconds</strong></span></a></p>
 	
 <h2>&nbsp;</h2></div>
 
