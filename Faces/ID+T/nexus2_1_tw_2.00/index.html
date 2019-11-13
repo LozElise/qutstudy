@@ -118,7 +118,22 @@ button:hover {
   //    });
       });
 	  
-   
+    $('input[type="radio"]','#after_quest1_a').click(function ()
+    {
+       $('#before_quest1_b').ready(function(event)
+       {
+           $('#before_quest1_b').hide();
+	   $('#after_quest1_a').hide();
+           $('#after_quest1_b').show();
+	   
+       });
+  //    $('#after_image').click(function(event)
+  //    {
+  //        $('#after_image').hide();
+  //        $('#before_image').show();
+  //    });
+      });
+      
 	  
 	  
   $('#before_image').click(function() {
@@ -147,7 +162,7 @@ button:hover {
       var timeStartq1_a = new Date().getTime();
       var timerq1_a = setInterval(function() {
           var nowq1_a = new Date().getTime();
-          var remainingq1_a = Math.max(0, 16000 - (nowq1_a - timeStartq1_a));
+          var remainingq1_a = Math.max(0, 4000 - (nowq1_a - timeStartq1_a));
           $("#cntrq1_a").html((remainingq1_a / 1000).toFixed(1));
          if (remainingq1_a <= 0) {
               clearInterval(timerq1_a);
@@ -156,7 +171,23 @@ button:hover {
 //      $("#after_quest1_a").delay(99999).fadeOut("slow");
   });
 	  
-
+	    $('input[type="radio"]','#after_quest1_a').click(function() {
+  //$(".after_quest1_b").click(function () {
+  //        $("#after_quest1_b").fadeOut("slow");
+  //    }); 
+      var timeStartq1_b = new Date().getTime();
+      var timerq1_b = setInterval(function() {
+          var nowq1_b = new Date().getTime();
+          var remainingq1_b = Math.max(0, 16000 - (nowq1_b - timeStartq1_b));
+          $("#cntrq1_b").html((remainingq1_b / 1000).toFixed(1));
+         if (remainingq1_b <= 0) {
+              clearInterval(timerq1_b);
+          }
+      }, 100);
+//      $("#after_quest1_b").delay(99999).fadeOut("slow");
+  });
+	  
+ 
   });//]]> 
   
   
@@ -245,8 +276,22 @@ button:hover {
 
 <div class="radio"><label><input id="notintelligent" name="intelligence" required="" type="radio" value="0" />&nbsp; <span style="vertical-align: middle; margin: 0px; color: rgb(0, 128, 128);">appears to be an <strong>unintelligent</strong> person</span></label></div>
 
-<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_a">16.0</span> seconds</strong></span></a></p>
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_a">4.0</span> seconds</strong></span></a></p>
 
+<h2>&nbsp;</h2></div>
+	
+<div id="before_quest1_b"><img alt="" height="100px" src="https://lozelise.github.io/qutstudy/Version4/DisplayQn2.png" /></div>
+
+<div id="after_quest1_b" style="display:none;">
+	
+<h3><span style="color: rgb(70,130,180);">b):</span></h3>
+
+<div class="radio"><label><input id="Dominant" name="dominant" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>dominant</strong> person</span></label></div>
+
+<div class="radio"><label><input id="Vulnerable" name="dominant" required="" type="radio" value="0" />&nbsp; <span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>vulnerable</strong> person</span></label></div>
+	
+<p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_b">4.0</span> seconds</strong></span></a></p>
+	
 <h2>&nbsp;</h2></div>
 
 <h2><span style="color:#000080;"><strong><u>2. Decision confidence</u></strong>&nbsp;</span></h2>
@@ -483,3 +528,4 @@ function fixStepIndicator(n) {
 
 </body>
 </html>
+
