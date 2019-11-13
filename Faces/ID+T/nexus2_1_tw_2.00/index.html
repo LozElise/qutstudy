@@ -84,6 +84,7 @@ button:hover {
   background-color: #4CAF50;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link href="/css/result-light.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 </style>
@@ -286,9 +287,24 @@ button:hover {
 	
 <h3><span style="color: rgb(70,130,180);">b):</span></h3>
 
-<div class="radio"><label><input id="Dominant" name="dominant" required="" type="radio" value="1" />&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>dominant</strong> person</span></label></div>
-
-<div class="radio"><label><input id="Vulnerable" name="dominant" required="" type="radio" value="0" />&nbsp; <span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong>vulnerable</strong> person</span></label></div>
+<div class="cc-selector">
+	<label>
+    	<input name="domtrust" required="" type="radio" value="trudom" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <div id="trudom"></div> </strong> person</span>
+    </label><br>
+	<label>
+    	<input name="domtrust" required="" type="radio" value="untrudom" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <div id="untrudom"></div> </strong> person</span>
+    </label><br>
+	<label>
+    	<input name="domtrust" required="" type="radio" value="truvul" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <div id="truvul"></div> </strong> person</span>
+    </label><br>
+	<label>
+    	<input name="domtrust" required="" type="radio" value="untruvul" />&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong><div id="untruvul"></div> </strong>person</span>
+	</label><br>
+    
+ </div>
 	
 <p><a href="#nogo" title="Close"><span style="color: rgb(255,0,0);"><strong>Time Remaining: <span id="cntrq1_b">4.0</span> seconds</strong></span></a></p>
 	
@@ -310,6 +326,7 @@ button:hover {
 
 <p><textarea cols="40" id="reasoning1" name="reasoning_1" rows="1">  
   </textarea></p>
+  </div>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 <p><a href="#nogo" title="Close"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script> </a></p>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script>
@@ -454,6 +471,56 @@ input::-moz-focus-outer {
     <span class="step"></span>
   </div>
 </form>
+
+<script>
+$(".cc-selector").each(function() {
+  $(this).html(
+    $(this).children().sort(function() {
+      return (Math.random() - 0.5);
+    })
+  );
+});
+</script>
+
+  <script>
+
+var trudom = [
+  "Trustworthy, Dominant",
+  "Dominant, Trustworthy"
+];
+
+var untrudom = [
+  "Untrustworthy, Dominant",
+  "Dominant, Untrustworthy"
+];
+
+var truvul = [
+  "Trustworthy, Vulnerable",
+  "Vulnerable, Trustworthy"
+];
+  var untruvul = [
+  "Untrustworthy, Vulnerable",
+  "Vulnerable, Untrustworthy"
+];
+
+var randomItem = truvul[Math.floor(Math.random()*truvul.length)];
+
+document.getElementById("trudom").innerHTML = randomItem;
+
+var randomItem = untruvul[Math.floor(Math.random()*untruvul.length)];
+
+document.getElementById("untrudom").innerHTML = randomItem;
+
+var randomItem = truvul[Math.floor(Math.random()*truvul.length)];
+
+document.getElementById("truvul").innerHTML = randomItem;
+
+var randomItem = untruvul[Math.floor(Math.random()*untruvul.length)];
+
+document.getElementById("untruvul").innerHTML = randomItem;
+
+  </script>
+
 
 <script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
