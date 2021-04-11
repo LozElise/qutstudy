@@ -289,20 +289,20 @@ button:hover {
 
 <div class="cc-selector">
 	<label>
-    	<input name="domtrust" required="" type="radio" value="trudom" />
-        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="trudom"></span> </strong> person</span><br />
+    	<input name="domtrust" required="" type="radio" value="trucon" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="trucon"></span> </strong> person</span><br />
     </label>
 	<label>
-    	<input name="domtrust" required="" type="radio" value="untrudom" />
-        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="untrudom"></span> </strong> person</span><br />
+    	<input name="domtrust" required="" type="radio" value="untrucon" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="untrucon"></span> </strong> person</span><br />
     </label>
 	<label>
-    	<input name="domtrust" required="" type="radio" value="truvul" />
-        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="truvul"></span> </strong> person</span><br />
+    	<input name="domtrust" required="" type="radio" value="truunsur" />
+        &nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="truunsur"></span> </strong> person</span><br />
     </label>
 	<label>
-    	<input name="domtrust" required="" type="radio" value="untruvul" />
-	&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="untruvul"></span> </strong>person</span><br />
+    	<input name="domtrust" required="" type="radio" value="untruunsur" />
+	&nbsp;&nbsp;<span style="vertical-align: middle; margin: 0px; color: rgb(70,130,180);">appears to be a <strong> <span id="untruunsur"></span> </strong>person</span><br />
 	</label>
  </div>
 	
@@ -484,23 +484,23 @@ $(".cc-selector").each(function() {
 
   <script>
 
-var trudom = [
+var trucon = [
   "Trustworthy, Confident",
   "Confident, Trustworthy"
 ];
 
-var untrudom = [
+var untrucon = [
   "Untrustworthy, Confident",
   "Confident, Untrustworthy"
 ];
 
-var truvul = [
-  "Trustworthy, Insecure",
-  "Insecure, Trustworthy"
+var truunsur = [
+  "Trustworthy, Unsure",
+  "Unsure, Trustworthy"
 ];
-  var untruvul = [
-  "Untrustworthy, Insecure",
-  "Insecure, Untrustworthy"
+  var untruunsur = [
+  "Untrustworthy, Unsure",
+  "Unsure, Untrustworthy"
 ];
 
 var randomItem = trudom[Math.floor(Math.random()*trudom.length)];
